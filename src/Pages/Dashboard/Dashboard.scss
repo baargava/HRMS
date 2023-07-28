@@ -1,0 +1,36 @@
+.heading{
+    color: #333;
+font-size: 1.25rem;
+font-weight: 700;
+}
+.subheading{
+    color:  #333;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.input-search{
+    display: flex;
+width: 18.6875rem;
+height: 2.1rem;
+padding: 0rem 1.25rem 0.6875rem 0rem;
+align-items: flex-start;
+gap: 0.625rem;
+border-radius: 0.625rem 0rem 0rem 0.625rem;
+background-color: #fff;
+margin-left: 12.38rem;
+border: 0.5rem solid white;
+
+}
+.searchicon{
+    background-color: #377dff;
+    display: flex;
+    color: white;
+padding: 0rem 0.625rem 0.625rem 0rem;
+align-items:center;
+gap: 0.625rem;
+border-radius: 0rem 0.625rem 0.625rem 0rem;
+height: 70px;
+padding: 0.3rem;
+}
