@@ -16,7 +16,7 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
-import profilepic from '../assets/profilepic.png';
+// import profilepic from '../assets/profilepic.png';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import HelpOutlinedIcon from '@mui/icons-material/HelpOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -68,21 +68,21 @@ const Header = ({ handleToggleSidebar, isClose, backgroundColor, headerText, not
       )}
 
       <Box display='flex' flexDirection='row'>
-       {!isMobile&&(
-        <Box
-          display="flex"
-          backgroundColor='#fafbfc'
-          borderRadius="10px"
-          height={40}
-        >
-          <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
-          <Box backgroundColor='#377dff' sx={{ borderTopRightRadius: '10px', borderBottomRightRadius: '10px' }}>
-            <IconButton type="button" sx={{ p: 1 }}>
-              <SearchIcon sx={{ color: '#fff' }} />
-            </IconButton>
+        {!isMobile && (
+          <Box
+            display="flex"
+            backgroundColor='#fafbfc'
+            borderRadius="10px"
+            height={40}
+          >
+            <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
+            <Box backgroundColor='#377dff' sx={{ borderTopRightRadius: '10px', borderBottomRightRadius: '10px' }}>
+              <IconButton type="button" sx={{ p: 1 }}>
+                <SearchIcon sx={{ color: '#fff' }} />
+              </IconButton>
+            </Box>
           </Box>
-        </Box>
-       )}
+        )}
 
         <Box display="flex" marginX={3} justifyContent='space-around'>
           <IconButton>

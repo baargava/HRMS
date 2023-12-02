@@ -11,8 +11,8 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import Chart from 'react-apexcharts'
 import { useState } from "react";
-import suitcase from '../assets/suitcase.png'
-import activeemp from '../assets/activeemp.png'
+// import suitcase from '../assets/suitcase.png'
+// import activeemp from '../assets/activeemp.png'
 
 
 const Dashboard = () => {
@@ -332,34 +332,34 @@ const Dashboard = () => {
 
           <Grid xs={12} sm={12} md={12} sx={{ width: '100%', height: '100%' }}>
             <Box backgroundColor='#fff' p="30px" marginBottom={2} borderRadius={3} marginTop={3}>
-            <Typography fontWeight='500' variant="h6">Statistics Of Applications</Typography>
+              <Typography fontWeight='500' variant="h6">Statistics Of Applications</Typography>
               <Chart options={chartData.options} series={chartData.series} type="bar" height={350} />
 
             </Box>
           </Grid>
           <Grid container spacing={2}>
             <Grid item xs={12} lg={6} xl={6}>
-              <Box backgroundColor='#fff' padding="15px" 
-             maxHeight="50vh"
-            overflow="auto"
-            borderRadius={2}
+              <Box backgroundColor='#fff' padding="15px"
+                maxHeight="50vh"
+                overflow="auto"
+                borderRadius={2}
               >
-              <Box
-              display="flex"
-              justifyContent="space-between"
-              alignItems="center"
-              borderBottom={`4px solid #fff`}
-              color='#b2b2b2'
-              p="15px"
-            >
-              <Typography
-                variant="h6"
-                fontWeight='700'
-                color='#333'
-              >
-                Activity Feed
-              </Typography>
-            </Box>
+                <Box
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  borderBottom={`4px solid #fff`}
+                  color='#b2b2b2'
+                  p="15px"
+                >
+                  <Typography
+                    variant="h6"
+                    fontWeight='700'
+                    color='#333'
+                  >
+                    Activity Feed
+                  </Typography>
+                </Box>
                 {activityFeed?.map((transaction, i) => {
                   return (
                     <Box
@@ -370,17 +370,17 @@ const Dashboard = () => {
                       p="5px"
                     >
                       <Box display='flex' flexDirection='row'>
-                      <Box
-                    component="img"
-                    sx={{
-                      height: 30,
-                      width: 30,
-                    }}
-                    alt=""
-                    src={activeemp}
-                  />
+                        <Box
+                          component="img"
+                          sx={{
+                            height: 30,
+                            width: 30,
+                          }}
+                          alt=""
+                          src={activeemp}
+                        />
                         <Typography color='#333' marginLeft={2}>
-                          {transaction.message} 
+                          {transaction.message}
                         </Typography>
                       </Box>
                     </Box>
@@ -391,21 +391,21 @@ const Dashboard = () => {
             </Grid>
             <Grid item xs={12} lg={6} xl={6}>
               <Box backgroundColor='#fff' padding="15px" borderRadius={2}>
-              <Box
-              display="flex"
-              justifyContent="space-between"
-              alignItems="center"
-              color='#b2b2b2'
-              p="5px"
-            >
-              <Typography
-                variant="h6"
-                fontWeight="700"
-                color='#333'
-              >
-                Meetings
-              </Typography>
-            </Box>
+                <Box
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  color='#b2b2b2'
+                  p="5px"
+                >
+                  <Typography
+                    variant="h6"
+                    fontWeight="700"
+                    color='#333'
+                  >
+                    Meetings
+                  </Typography>
+                </Box>
                 {meetings.map((transaction, i) => {
                   return (
                     <Box
@@ -415,12 +415,12 @@ const Dashboard = () => {
                       alignItems="center"
                       p="15px"
                     >
-                      <Box 
-                         width={50}
-                          backgroundColor='#fff'
-                          borderRadius={3}
-                           border='1px solid #faf9fb'
-                          >
+                      <Box
+                        width={50}
+                        backgroundColor='#fff'
+                        borderRadius={3}
+                        border='1px solid #faf9fb'
+                      >
                         <Typography
                           variant="h5"
                           fontWeight="600"
@@ -430,10 +430,10 @@ const Dashboard = () => {
                         </Typography>
                       </Box>
                       <Box marginLeft={2} >
-                      <Typography color='#333' variant='p' fontWeight='600'>{transaction.meeting}</Typography>
-                      
+                        <Typography color='#333' variant='p' fontWeight='600'>{transaction.meeting}</Typography>
 
-                       <Typography color='#b2b2b2' > {transaction.timings}</Typography>
+
+                        <Typography color='#b2b2b2' > {transaction.timings}</Typography>
                       </Box>
                     </Box>
                   );
@@ -441,7 +441,7 @@ const Dashboard = () => {
               </Box>
             </Grid>
           </Grid>
-   </Grid>
+        </Grid>
         <Grid xs={12} sm={12} md={4} lg={4} xl={4}>
           <Box
             backgroundColor='#fff'
@@ -477,38 +477,38 @@ const Dashboard = () => {
                   borderRadius={2}
                   p={1}
                 >
-                <Box backgroundColor='#fff' borderRadius={3} width={40} height={40}>
-                <Box
-                    component="img"
-                    sx={{
-                      height: 30, 
-                      width: 30,
-                      display:'flex',
-                      justifyContent:'center',
-                      alignItems: 'center'
-                    }}
-                    alt=""
-                    src={suitcase}
-                    ml={0.6}
-                    mt={0.5}
-                  />
-                </Box>
-                 
-                <Box display='flex' flexDirection='column'  >
-                
-                 
+                  <Box backgroundColor='#fff' borderRadius={3} width={40} height={40}>
+                    <Box
+                      component="img"
+                      sx={{
+                        height: 30,
+                        width: 30,
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                      }}
+                      alt=""
+                      src={suitcase}
+                      ml={0.6}
+                      mt={0.5}
+                    />
+                  </Box>
+
+                  <Box display='flex' flexDirection='column'  >
+
+
                     <Typography color='#000' marginLeft={2}>
                       {transaction.role}
                     </Typography>
                     <Typography
-                    color='#444'
-                    p="5px 10px"
-                    marginLeft={1}
-                  >
-                    {transaction.skills}
-                  </Typography>
+                      color='#444'
+                      p="5px 10px"
+                      marginLeft={1}
+                    >
+                      {transaction.skills}
+                    </Typography>
                   </Box>
-                 
+
                 </Box>
               );
             })}

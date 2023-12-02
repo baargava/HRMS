@@ -1,5 +1,5 @@
-import { useState,useEffect, useRef } from "react";
-import { Sidebar, Menu, MenuItem, sidebarClasses,menuClasses} from "react-pro-sidebar";
+import { useState, useEffect, useRef } from "react";
+import { Sidebar, Menu, MenuItem, sidebarClasses, menuClasses } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -15,7 +15,7 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import { green, red } from "@mui/material/colors";
-import profilepic from '../assets/profilepic.png'
+// import profilepic from '../assets/profilepic.png'
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 const Item = ({ title, to, icon, selected, setSelected }) => {
   return (
@@ -41,8 +41,8 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   );
 };
 
-const SSidebar = ({toggled, handleToggleSidebar,
-  handleCollapsedChange,onClose}) => {
+const SSidebar = ({ toggled, handleToggleSidebar,
+  handleCollapsedChange, onClose }) => {
   // const theme = useTheme();
   // const colors = tokens(theme.palette.mode);
   const handleSidebarToggle = () => {
@@ -74,32 +74,32 @@ const SSidebar = ({toggled, handleToggleSidebar,
 
   return (
     <Box>
-      <Sidebar       
-       collapsed={isCollapsed}  
+      <Sidebar
+        collapsed={isCollapsed}
         customBreakPoint="768px"
         toggled={toggled}
         onToggle={handleToggleSidebar}
         handleToggleSidebar={handleToggleSidebar}
         handleCollapsedChange={handleCollapsedChange}
         rootStyles={{
-    [`.${sidebarClasses.container}`]: {
-      backgroundColor: '#fff',
-    },
-  }}>
-      
-        <Menu iconShape="square"   menuItemStyles={{
-      button: ({ level, active, disabled }) => {
-        // only apply styles on first level elements of the tree
-        if (level === 0)
-          return {
-            color: active ? '#fff' : '#b2b2b2',
-            backgroundColor: active ? '#377dff' : undefined,
-            // width:'200px',
-            borderRadius:'10px'
-          };
-      },
-    }}>
-          {/* LOGO AND MENU ICON */}   
+          [`.${sidebarClasses.container}`]: {
+            backgroundColor: '#fff',
+          },
+        }}>
+
+        <Menu iconShape="square" menuItemStyles={{
+          button: ({ level, active, disabled }) => {
+            // only apply styles on first level elements of the tree
+            if (level === 0)
+              return {
+                color: active ? '#fff' : '#b2b2b2',
+                backgroundColor: active ? '#377dff' : undefined,
+                // width:'200px',
+                borderRadius: '10px'
+              };
+          },
+        }}>
+          {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
@@ -119,14 +119,14 @@ const SSidebar = ({toggled, handleToggleSidebar,
                   <MenuOutlinedIcon />
                 </IconButton>
                 <Typography variant="h6" color='#377dff'>
-                  CODEFACTS             
-                     </Typography>
-              
+                  CODEFACTS
+                </Typography>
+
                 {toggled && isMobileBreakpoint && (
-        <IconButton onClick={() => onClose()} sx={{right: '5px', zIndex: 1 }}>
-          <CloseOutlinedIcon />
-        </IconButton>
-      )}
+                  <IconButton onClick={() => onClose()} sx={{ right: '5px', zIndex: 1 }}>
+                    <CloseOutlinedIcon />
+                  </IconButton>
+                )}
               </Box>
             )}
           </MenuItem>
@@ -171,13 +171,13 @@ const SSidebar = ({toggled, handleToggleSidebar,
             </Box>
           )}
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-          <Typography
+            <Typography
               variant="p"
               color='#333'
               fontWeight='600'
-              fontSize={isCollapsed ? '10px':'16px'}
+              fontSize={isCollapsed ? '10px' : '16px'}
 
-              sx={{ m: "20px 0 20px 20px" ,backgroundColor:'#fff'}}
+              sx={{ m: "20px 0 20px 20px", backgroundColor: '#fff' }}
             >
               MENU
             </Typography>
@@ -217,8 +217,8 @@ const SSidebar = ({toggled, handleToggleSidebar,
               variant="p"
               color='#333'
               fontWeight='600'
-              fontSize={isCollapsed ? '10px':'16px'}
-              sx={{ m: "20px 0 20px 5px" ,backgroundColor:'#fff'}}
+              fontSize={isCollapsed ? '10px' : '16px'}
+              sx={{ m: "20px 0 20px 5px", backgroundColor: '#fff' }}
             >
               RECRUITMENT
             </Typography>
@@ -247,9 +247,9 @@ const SSidebar = ({toggled, handleToggleSidebar,
             <Typography
               variant="p"
               color='#333'
-              fontSize={isCollapsed ? '10px':'16px'}
+              fontSize={isCollapsed ? '10px' : '16px'}
               fontWeight='600'
-           sx={{ m: "20px 0 20px 5px" ,backgroundColor:'#fff'}}
+              sx={{ m: "20px 0 20px 5px", backgroundColor: '#fff' }}
 
             >
               ORGANIZATION
