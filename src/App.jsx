@@ -1,15 +1,4 @@
-<<<<<<< Updated upstream
-import { useState } from 'react'
-import './App.css'
 
-function App() {
-
-  return (
-    <>
-     <h1>hi </h1>
-    </>
-  )
-=======
 import { useState } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
@@ -94,15 +83,15 @@ function App() {
         ) : null}
         <Routes>
           <Route path='/' element={<Login />} />
-<Route path='/dashboard' element={<Dashboard />} />
-         <Route path='/message' element={<Messages />} />
-           <Route path='/calender' element={<Calender />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/message' element={<Messages />} />
+          <Route path='/calender' element={<Calender />} />
           <Route path='/candidates' element={<Candidates />} />
           <Route path='/attendence' element={<Attendence />} />
-           <Route path='/career' element={<CareerSites />} />
-           <Route path='/jobs' element={<Jobs />}>
-             <Route index element={<ActiveJobs />} />
-          <Route path='/jobs/actjobs' element={<ActiveJobs />} />
+          <Route path='/career' element={<CareerSites />} />
+          <Route path='/jobs' element={<Jobs />}>
+            <Route index element={<ActiveJobs />} />
+            <Route path='/jobs/actjobs' element={<ActiveJobs />} />
             <Route path='/jobs/unfinished' element={<Unfinshed />} />
             <Route path='/jobs/completed' element={<CompletedJobs />} />
           </Route>
@@ -122,7 +111,6 @@ function App() {
       </main>
     </div>
   );
->>>>>>> Stashed changes
 }
 
 export default App;

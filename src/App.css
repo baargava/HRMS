@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
-#root {
- 
-}
 
-=======
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 
 html,
@@ -56,4 +51,3 @@ body,
 .react-datepicker__year-dropdown-container {
   margin-left: 10; /* Prevent the DatePicker from moving to the left when clicked */
 }
->>>>>>> Stashed changes
