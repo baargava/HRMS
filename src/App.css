@@ -1,4 +1,59 @@
+<<<<<<< Updated upstream
 #root {
  
 }
 
+=======
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f5f6fa;
+}
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* DatePicker.css */
+.custom-datepicker {
+  border: 1px solid #efefef; /* Change the border color to red */
+  margin-left: 15;
+}
+
+.react-datepicker-wrapper {
+  display: inline-block; /* Set display to inline-block */
+}
+
+.react-datepicker__input-container {
+  display: inline-block; /* Set display to inline-block */
+}
+
+.react-datepicker__year-dropdown-container {
+  margin-left: 10; /* Prevent the DatePicker from moving to the left when clicked */
+}
+>>>>>>> Stashed changes
